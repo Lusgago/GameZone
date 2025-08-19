@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🎮 GameZone - Portal de Games
 
 Um portal moderno e responsivo dedicado ao universo dos jogos, com design focado em UI/UX e experiência do usuário otimizada para todas as plataformas de gaming.
@@ -166,3 +167,7 @@ Este projeto foi desenvolvido como uma demonstração de:
 ---
 
 **Desenvolvido com ❤️ para a comunidade gamer**
+=======
+# GameZone
+UI design for a landing page for a gaming platform, with sections for news, prices, and graphics. This is a conceptual project focused on user experience (UX/UI), without any code implementation. (Non-functional prototype).
+>>>>>>> 92d392ffede07267732623e17b0593b32d8ea27f
