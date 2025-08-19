@@ -1,13 +1,12 @@
-<<<<<<< HEAD
-# 🎮 GameZone - Portal de Games
+# GameZone - Portal de Games
 
 Um portal moderno e responsivo dedicado ao universo dos jogos, com design focado em UI/UX e experiência do usuário otimizada para todas as plataformas de gaming.
 
-## 🚀 Demo
+## Demo
 
 Abra o arquivo `gamezone.html` em qualquer navegador moderno para visualizar o projeto.
 
-## 🎨 Design & Features
+## Design & Features
 
 ### Interface Principal
 - **Design Dark Mode** com esquema de cores neon
@@ -32,7 +31,7 @@ Abra o arquivo `gamezone.html` em qualquer navegador moderno para visualizar o p
 - **Formulários Estilizados** com inputs customizados
 - **Navegação Responsiva** com indicadores visuais
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 ### Frontend
 - **HTML5** - Estrutura semântica
@@ -63,7 +62,7 @@ Pink: #EC4899
 Dark: #0F172A
 ```
 
-## 📁 Estrutura do Projeto
+## Estrutura do Projeto
 
 ```
 Gamezone/
@@ -93,9 +92,9 @@ Gamezone/
 - Funcionalidade de favoritos
 - Responsividade dos gráficos
 
-## 🎯 Funcionalidades
+## Funcionalidades
 
-### ✅ Implementadas
+### Implementadas
 - [x] Design responsivo completo
 - [x] Sistema de navegação por plataformas
 - [x] Cards interativos de jogos
@@ -106,13 +105,13 @@ Gamezone/
 - [x] Newsletter signup
 - [x] Footer com informações completas
 
-### 🔄 Interações
+### Interações
 - **Hover Effects**: Cards elevam e brilham com cores das plataformas
 - **Favoritos**: Clique nos corações para marcar/desmarcar jogos
 - **Gráficos**: Tooltips interativos e responsivos
 - **Navegação**: Links com animações de underline
 
-## 🚀 Como Executar
+## Como Executar
 
 1. **Clone ou baixe** os arquivos do projeto
 2. **Abra** o arquivo `gamezone.html` em qualquer navegador moderno
@@ -122,7 +121,7 @@ Gamezone/
 - Navegador moderno (Chrome, Firefox, Safari, Edge)
 - Conexão com internet (para CDNs)
 
-## 🎨 Customização
+## Customização
 
 ### Cores
 Edite as variáveis de cor no `script.js` (configuração Tailwind) e `styles.css` para personalizar a paleta.
@@ -135,14 +134,14 @@ Edite as variáveis de cor no `script.js` (configuração Tailwind) e `styles.cs
 ### Layout
 Use as classes do Tailwind CSS para ajustar spacing, cores e responsividade.
 
-## 📱 Responsividade
+## Responsividade
 
 O projeto é totalmente responsivo com breakpoints:
 - **Mobile**: < 768px
 - **Tablet**: 768px - 1024px  
 - **Desktop**: > 1024px
 
-## 🎮 Plataformas Suportadas
+## Plataformas Suportadas
 
 - **Xbox Series X|S / Xbox One**
 - **PlayStation 5 / PlayStation 4**
@@ -150,13 +149,13 @@ O projeto é totalmente responsivo com breakpoints:
 - **PC Gaming**
 - **Mobile Gaming**
 
-## 📊 Gráficos e Dados
+## Gráficos e Dados
 
 - **Gráfico de Pizza**: Popularidade por plataforma
 - **Gráfico de Barras**: Gêneros mais populares
 - **Dados Fictícios**: Para demonstração de funcionalidades
 
-## 🎯 Objetivo do Projeto
+## Objetivo do Projeto
 
 Este projeto foi desenvolvido como uma demonstração de:
 - **UI/UX Design** moderno para gaming
@@ -166,8 +165,4 @@ Este projeto foi desenvolvido como uma demonstração de:
 
 ---
 
-**Desenvolvido com ❤️ para a comunidade gamer**
-=======
-# GameZone
-UI design for a landing page for a gaming platform, with sections for news, prices, and graphics. This is a conceptual project focused on user experience (UX/UI), without any code implementation. (Non-functional prototype).
->>>>>>> 92d392ffede07267732623e17b0593b32d8ea27f
+**Desenvolvido com amor para a comunidade gamer**
