@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GameZone - Seu portal de games</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Orbitron:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="bg-dark border-b border-gray-800">
+      <div class="container mx-auto px-4 py-3">
+        <div class="flex items-center justify-between">
+          <!-- Logo -->
+          <div class="flex items-center">
+  
+            <span
+              class="text-xl font-orbitron font-bold bg-gradient-to-r from-neon-purple to-neon-blue text-transparent bg-clip-text"
+              >GameZone</span
+            >
+          </div>
+
+          <!-- Navigation -->
+          <nav class="hidden md:flex items-center space-x-8">
+            <a
+              href="#"
+              class="nav-link active flex items-center text-white hover:text-neon-purple"
+            >
+              <div class="w-6 h-6 flex items-center justify-center mr-1">
+                <i class="ri-home-4-line"></i>
+              </div>
+              Início
+            </a>
+            <a
+              href="#"
+              class="nav-link flex items-center text-gray-300 hover:text-neon-purple"
+            >
+              <div
+                class="w-6 h-6 flex items-center justify-center mr-1 text-xbox"
+              >
+                <i class="ri-xbox-line"></i>
+              </div>
+              Xbox
+            </a>
+            <a
+              href="#"
+              class="nav-link flex items-center text-gray-300 hover:text-neon-purple"
+            >
+              <div
+                class="w-6 h-6 flex items-center justify-center mr-1 text-playstation"
+              >
+                <i class="ri-playstation-line"></i>
+              </div>
+              PlayStation
+            </a>
+            <a
+              href="#"
+              class="nav-link flex items-center text-gray-300 hover:text-neon-purple"
+            >
+              <div
+                class="w-6 h-6 flex items-center justify-center mr-1 text-nintendo"
+              >
+                <i class="ri-gamepad-line"></i>
+              </div>
+              Nintendo
+            </a>
+            <a
+              href="#"
+              class="nav-link flex items-center text-gray-300 hover:text-neon-purple"
+            >
+              <div
+                class="w-6 h-6 flex items-center justify-center mr-1 text-pc"
+              >
+                <i class="ri-computer-line"></i>
+              </div>
+              PC
+            </a>
+          </nav>
+
+          <!-- Search and User -->
+          <div class="flex items-center space-x-4">
+            <div class="relative">
+              <input
+                type="text"
+                placeholder="Buscar jogos..."
+                class="search-input w-48 py-2 pl-10 pr-4 rounded-full text-sm text-white focus:outline-none"
+              />
+              <div
+                class="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 flex items-center justify-center text-gray-400"
+              >
+                <i class="ri-search-line"></i>
+              </div>
+            </div>
+
+            <button
+              class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-gray-700 transition !rounded-button"
+            >
+              <i class="ri-user-line text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative h-[500px] overflow-hidden">
+      <div
+        style="background-image: url('https://readdy.ai/api/search-image?query=epic%20gaming%20scene%20with%20neon%20lights%2C%20ultra%20high%20quality%2C%20cinematic%2C%20showing%20a%20modern%20gaming%20setup%20with%20multiple%20screens%20displaying%20different%20games%2C%20dramatic%20lighting%2C%20cyberpunk%20style%2C%208K%20resolution%2C%20photorealistic&width=1920&height=1080&seq=hero1&orientation=landscape');"
+        class="absolute inset-0 bg-cover bg-center"
+      ></div>
+      <div class="absolute inset-0 hero-gradient"></div>
+
+      <div
+        class="container mx-auto px-4 h-full flex items-center relative z-10"
+      >
+        <div class="w-full max-w-2xl">
+          <h1 class="text-4xl md:text-5xl font-orbitron font-bold mb-4">
+            Descubra o Universo dos Games
+          </h1>
+          <p class="text-xl text-gray-300 mb-8">
+            Seu portal definitivo para notícias, lançamentos e tendências do
+            mundo dos jogos em todas as plataformas.
+          </p>
+          <div class="flex space-x-4">
+            <button
+              class="bg-neon-purple hover:bg-opacity-90 text-white px-6 py-3 rounded-full font-semibold transition flex items-center !rounded-button whitespace-nowrap"
+            >
+              <div class="w-5 h-5 flex items-center justify-center mr-2">
+                <i class="ri-gamepad-line"></i>
+              </div>
+              Explorar Jogos
+            </button>
+            <button
+              class="bg-transparent border-2 border-white hover:border-neon-purple text-white px-6 py-3 rounded-full font-semibold transition !rounded-button whitespace-nowrap"
+            >
+              <div class="w-5 h-5 flex items-center justify-center mr-2">
+                <i class="ri-information-line"></i>
+              </div>
+              Saiba Mais
+            </button>
+          </div>
+
+          <div class="flex mt-8 space-x-2">
+            <span class="w-3 h-3 bg-white rounded-full opacity-100"></span>
+            <span class="w-3 h-3 bg-white rounded-full opacity-50"></span>
+            <span class="w-3 h-3 bg-white rounded-full opacity-50"></span>
+            <span class="w-3 h-3 bg-white rounded-full opacity-50"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Platform Section -->
+    <section class="py-16 bg-gray-900">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-orbitron font-bold mb-12 text-center">
+          Escolha sua <span class="text-neon-purple">Plataforma</span>
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Xbox -->
+          <div
+            class="platform-card xbox-card bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg overflow-hidden border border-gray-700 relative"
+          >
+            <div class="absolute top-0 right-0 w-24 h-24 opacity-10">
+              <div class="w-full h-full flex items-center justify-center">
+                <i class="ri-xbox-fill text-6xl text-xbox"></i>
+              </div>
+            </div>
+            <div class="p-6">
+              <div
+                class="w-12 h-12 flex items-center justify-center bg-xbox rounded-full mb-4"
+              >
+                <i class="ri-xbox-line text-2xl text-white"></i>
+              </div>
+              <h3 class="text-xl font-orbitron font-bold mb-2">Xbox</h3>
+              <p class="text-gray-400 mb-4">
+                Explore os últimos lançamentos e exclusivos para Xbox Series X|S
+                e Xbox One.
+              </p>
+              <button
+                class="bg-xbox hover:bg-opacity-90 text-white px-4 py-2 rounded-md font-medium transition flex items-center !rounded-button whitespace-nowrap"
+              >
+                <div class="w-5 h-5 flex items-center justify-center mr-2">
+                  <i class="ri-arrow-right-line"></i>
+                </div>
+                Ver Jogos
+              </button>
+            </div>
+          </div>
+
+          <!-- PlayStation -->
+          <div
+            class="platform-card playstation-card bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg overflow-hidden border border-gray-700 relative"
+          >
+            <div class="absolute top-0 right-0 w-24 h-24 opacity-10">
+              <div class="w-full h-full flex items-center justify-center">
+                <i class="ri-playstation-fill text-6xl text-playstation"></i>
+              </div>
+            </div>
+            <div class="p-6">
+              <div
+                class="w-12 h-12 flex items-center justify-center bg-playstation rounded-full mb-4"
+              >
+                <i class="ri-playstation-line text-2xl text-white"></i>
+              </div>
+              <h3 class="text-xl font-orbitron font-bold mb-2">PlayStation</h3>
+              <p class="text-gray-400 mb-4">
+                Descubra os títulos exclusivos e novidades para PS5 e PS4.
+              </p>
+              <button
+                class="bg-playstation hover:bg-opacity-90 text-white px-4 py-2 rounded-md font-medium transition flex items-center !rounded-button whitespace-nowrap"
+              >
+                <div class="w-5 h-5 flex items-center justify-center mr-2">
+                  <i class="ri-arrow-right-line"></i>
+                </div>
+                Ver Jogos
+              </button>
+            </div>
+          </div>
+
+          <!-- Nintendo -->
+          <div
+            class="platform-card nintendo-card bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg overflow-hidden border border-gray-700 relative"
+          >
+            <div class="absolute top-0 right-0 w-24 h-24 opacity-10">
+              <div class="w-full h-full flex items-center justify-center">
+                <i class="ri-gamepad-fill text-6xl text-nintendo"></i>
+              </div>
+            </div>
+            <div class="p-6">
+              <div
+                class="w-12 h-12 flex items-center justify-center bg-nintendo rounded-full mb-4"
+              >
+                <i class="ri-gamepad-line text-2xl text-white"></i>
+              </div>
+              <h3 class="text-xl font-orbitron font-bold mb-2">Nintendo</h3>
+              <p class="text-gray-400 mb-4">
+                Confira os jogos para Nintendo Switch e as franquias mais
+                populares.
+              </p>
+              <button
+                class="bg-nintendo hover:bg-opacity-90 text-white px-4 py-2 rounded-md font-medium transition flex items-center !rounded-button whitespace-nowrap"
+              >
+                <div class="w-5 h-5 flex items-center justify-center mr-2">
+                  <i class="ri-arrow-right-line"></i>
+                </div>
+                Ver Jogos
+              </button>
+            </div>
+          </div>
+
+          <!-- PC -->
+          <div
+            class="platform-card pc-card bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg overflow-hidden border border-gray-700 relative"
+          >
+            <div class="absolute top-0 right-0 w-24 h-24 opacity-10">
+              <div class="w-full h-full flex items-center justify-center">
+                <i class="ri-computer-fill text-6xl text-pc"></i>
+              </div>
+            </div>
+            <div class="p-6">
+              <div
+                class="w-12 h-12 flex items-center justify-center bg-pc rounded-full mb-4"
+              >
+                <i class="ri-computer-line text-2xl text-white"></i>
+              </div>
+              <h3 class="text-xl font-orbitron font-bold mb-2">PC</h3>
+              <p class="text-gray-400 mb-4">
+                Explore os melhores jogos para PC, incluindo exclusivos e
+                multiplataforma.
+              </p>
+              <button
+                class="bg-pc hover:bg-opacity-90 text-white px-4 py-2 rounded-md font-medium transition flex items-center !rounded-button whitespace-nowrap"
+              >
+                <div class="w-5 h-5 flex items-center justify-center mr-2">
+                  <i class="ri-arrow-right-line"></i>
+                </div>
+                Ver Jogos
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trending Games Section -->
+    <section class="py-16 bg-dark">
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center mb-12">
+          <h2 class="text-3xl font-orbitron font-bold">
+            Jogos em <span class="text-neon-green">Destaque</span>
+          </h2>
+
+          <div class="flex space-x-2">
+            <button
+              class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-gray-700 transition !rounded-button"
+            >
+              <i class="ri-arrow-left-s-line text-white"></i>
+            </button>
+            <button
+              class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-gray-700 transition !rounded-button"
+            >
+              <i class="ri-arrow-right-s-line text-white"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Game Card 1 -->
+          <div
+            class="game-card bg-gray-800 rounded-lg overflow-hidden relative"
+          >
+            <div class="badge badge-new">Novo</div>
+            <div class="relative">
+              <img
+                src="https://readdy.ai/api/search-image?query=screenshot%20from%20Starfield%20game%2C%20space%20exploration%2C%20high%20quality%2C%20realistic%2C%208K%20resolution%2C%20official%20game%20screenshot&width=600&height=400&seq=game1&orientation=landscape"
+                alt="Starfield"
+                class="w-full h-48 object-cover"
+              />
+              <button
+                class="absolute top-2 right-2 w-8 h-8 flex items-center justify-center bg-gray-900 bg-opacity-70 rounded-full hover:bg-neon-purple transition !rounded-button"
+              >
+                <i class="ri-heart-line text-white"></i>
+              </button>
+            </div>
+            <div class="p-4">
+              <div class="flex items-center mb-2">
+                <div class="platform-icon bg-xbox">
+                  <i class="ri-xbox-line text-xs text-white"></i>
+                </div>
+                <div class="platform-icon bg-pc">
+                  <i class="ri-computer-line text-xs text-white"></i>
+                </div>
+              </div>
+              <h3 class="text-lg font-orbitron font-bold mb-1">Starfield</h3>
+              <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                  <div
+                    class="w-4 h-4 flex items-center justify-center text-yellow-400 mr-1"
+                  >
+                    <i class="ri-star-fill"></i>
+                  </div>
+                  <span class="text-sm text-gray-300">4.8</span>
+                </div>
+                <span class="text-sm text-neon-green font-medium"
+                  >R$ 299,90</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Game Card 2 -->
+          <div
+            class="game-card bg-gray-800 rounded-lg overflow-hidden relative"
+          >
+            <div class="badge badge-sale">-30%</div>
+            <div class="relative">
+              <img
+                src="https://readdy.ai/api/search-image?query=screenshot%20from%20God%20of%20War%20Ragnarok%20game%2C%20epic%20battle%20scene%2C%20high%20quality%2C%20realistic%2C%208K%20resolution%2C%20official%20game%20screenshot&width=600&height=400&seq=game2&orientation=landscape"
+                alt="God of War Ragnarok"
+                class="w-full h-48 object-cover"
+              />
+              <button
+                class="absolute top-2 right-2 w-8 h-8 flex items-center justify-center bg-gray-900 bg-opacity-70 rounded-full hover:bg-neon-purple transition !rounded-button"
+              >
+                <i class="ri-heart-line text-white"></i>
+              </button>
+            </div>
+            <div class="p-4">
+              <div class="flex items-center mb-2">
+                <div class="platform-icon bg-playstation">
+                  <i class="ri-playstation-line text-xs text-white"></i>
+                </div>
+              </div>
+              <h3 class="text-lg font-orbitron font-bold mb-1">
+                God of War Ragnarok
+              </h3>
+              <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                  <div
+                    class="w-4 h-4 flex items-center justify-center text-yellow-400 mr-1"
+                  >
+                    <i class="ri-star-fill"></i>
+                  </div>
+                  <span class="text-sm text-gray-300">4.9</span>
+                </div>
+                <div>
+                  <span class="text-sm text-gray-400 line-through mr-1"
+                    >R$ 349,90</span
+                  >
+                  <span class="text-sm text-neon-pink font-medium"
+                    >R$ 244,90</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Game Card 3 -->
+          <div
+            class="game-card bg-gray-800 rounded-lg overflow-hidden relative"
+          >
+            <div class="relative">
+              <img
+                src="https://readdy.ai/api/search-image?query=screenshot%20from%20The%20Legend%20of%20Zelda:%20Tears%20of%20the%20Kingdom%20game%2C%20beautiful%20landscape%2C%20high%20quality%2C%20realistic%2C%208K%20resolution%2C%20official%20game%20screenshot&width=600&height=400&seq=game3&orientation=landscape"
+                alt="The Legend of Zelda: Tears of the Kingdom"
+                class="w-full h-48 object-cover"
+              />
+              <button
+                class="absolute top-2 right-2 w-8 h-8 flex items-center justify-center bg-gray-900 bg-opacity-70 rounded-full hover:bg-neon-purple transition !rounded-button"
+              >
+                <i class="ri-heart-fill text-neon-pink"></i>
+              </button>
+            </div>
+            <div class="p-4">
+              <div class="flex items-center mb-2">
+                <div class="platform-icon bg-nintendo">
+                  <i class="ri-gamepad-line text-xs text-white"></i>
+                </div>
+              </div>
+              <h3 class="text-lg font-orbitron font-bold mb-1">
+                Zelda: Tears of the Kingdom
+              </h3>
+              <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                  <div
+                    class="w-4 h-4 flex items-center justify-center text-yellow-400 mr-1"
+                  >
+                    <i class="ri-star-fill"></i>
+                  </div>
+                  <span class="text-sm text-gray-300">4.9</span>
+                </div>
+                <span class="text-sm text-neon-green font-medium"
+                  >R$ 299,90</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Game Card 4 -->
+          <div
+            class="game-card bg-gray-800 rounded-lg overflow-hidden relative"
+          >
+            <div class="badge badge-soon">Em breve</div>
+            <div class="relative">
+              <img
+                src="https://readdy.ai/api/search-image?query=screenshot%20from%20Fable%204%20game%2C%20fantasy%20world%2C%20high%20quality%2C%20realistic%2C%208K%20resolution%2C%20official%20game%20screenshot&width=600&height=400&seq=game4&orientation=landscape"
+                alt="Fable"
+                class="w-full h-48 object-cover"
+              />
+              <button
+                class="absolute top-2 right-2 w-8 h-8 flex items-center justify-center bg-gray-900 bg-opacity-70 rounded-full hover:bg-neon-purple transition !rounded-button"
+              >
+                <i class="ri-heart-line text-white"></i>
+              </button>
+            </div>
+            <div class="p-4">
+              <div class="flex items-center mb-2">
+                <div class="platform-icon bg-xbox">
+                  <i class="ri-xbox-line text-xs text-white"></i>
+                </div>
+                <div class="platform-icon bg-pc">
+                  <i class="ri-computer-line text-xs text-white"></i>
+                </div>
+              </div>
+              <h3 class="text-lg font-orbitron font-bold mb-1">Fable</h3>
+              <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                  <div
+                    class="w-4 h-4 flex items-center justify-center text-gray-400 mr-1"
+                  >
+                    <i class="ri-time-line"></i>
+                  </div>
+                  <span class="text-sm text-gray-300">2025</span>
+                </div>
+                <button
+                  class="text-sm text-neon-blue font-medium hover:underline !rounded-button whitespace-nowrap"
+                >
+                  Pré-venda
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-8 text-center">
+          <button
+            class="bg-transparent border-2 border-neon-purple hover:bg-neon-purple hover:bg-opacity-10 text-white px-6 py-3 rounded-full font-semibold transition !rounded-button whitespace-nowrap"
+          >
+            Ver Mais Jogos
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- News and Filters Section -->
+    <section class="py-16 bg-gray-900">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col lg:flex-row gap-8">
+          <!-- Filters Sidebar -->
+          <div class="w-full lg:w-1/4">
+            <div class="bg-gray-800 rounded-lg p-6 sticky top-4">
+              <h3 class="text-xl font-orbitron font-bold mb-6">Filtros</h3>
+
+              <!-- Platform Filter -->
+              <div class="mb-6">
+                <h4 class="text-sm font-semibold text-gray-400 uppercase mb-3">
+                  Plataformas
+                </h4>
+                <div class="space-y-3">
+                  <label class="custom-checkbox flex items-center">
+                    <input type="checkbox" checked />
+                    <span class="checkmark mr-3"></span>
+                    <span>Todas as plataformas</span>
+                  </label>
+                  <label class="custom-checkbox flex items-center">
+                    <input type="checkbox" />
+                    <span class="checkmark mr-3"></span>
+                    <div class="flex items-center">
+                      <div
+                        class="w-5 h-5 flex items-center justify-center text-xbox mr-2"
+                      >
+                        <i class="ri-xbox-line"></i>
+                      </div>
+                      <span>Xbox Series X|S / One</span>
+                    </div>
+                  </label>
+                  <label class="custom-checkbox flex items-center">
+                    <input type="checkbox" />
+                    <span class="checkmark mr-3"></span>
+                    <div class="flex items-center">
+                      <div
+                        class="w-5 h-5 flex items-center justify-center text-playstation mr-2"
+                      >
+                        <i class="ri-playstation-line"></i>
+                      </div>
+                      <span>PlayStation 5 / PS4</span>
+                    </div>
+                  </label>
+                  <label class="custom-checkbox flex items-center">
+                    <input type="checkbox" />
+                    <span class="checkmark mr-3"></span>
+                    <div class="flex items-center">
+                      <div
+                        class="w-5 h-5 flex items-center justify-center text-nintendo mr-2"
+                      >
+                        <i class="ri-gamepad-line"></i>
+                      </div>
+                      <span>Nintendo Switch</span>
+                    </div>
+                  </label>
+                  <label class="custom-checkbox flex items-center">
+                    <input type="checkbox" />
+                    <span class="checkmark mr-3"></span>
+                    <div class="flex items-center">
+                      <div
+                        class="w-5 h-5 flex items-center justify-center text-pc mr-2"
+                      >
+                        <i class="ri-computer-line"></i>
+                      </div>
+                      <span>PC</span>
+                    </div>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Genre Filter -->
+              <div class="mb-6">
+                <h4 class="text-sm font-semibold text-gray-400 uppercase mb-3">
+                  Gêneros
+                </h4>
+                <div class="space-y-3">
+                  <label class="custom-checkbox flex items-center">
+                    <input type="checkbox" checked />
+                    <span class="checkmark mr-3"></span>
+                    <span>Todos os gêneros</span>
+                  </label>
+                  <label class="custom-checkbox flex items-center">
+                    <input type="checkbox" />
+                    <span class="checkmark mr-3"></span>
+                    <div class="flex items-center">
+                      <div
+                        class="w-5 h-5 flex items-center justify-center mr-2"
+                      >
+                        <i class="ri-sword-line"></i>
+                      </div>
+                      <span>Ação e Aventura</span>
+                    </div>
+                  </label>
+                  <label class="custom-checkbox flex items-center">
+                    <input type="checkbox" />
+                    <span class="checkmark mr-3"></span>
+                    <div class="flex items-center">
+                      <div
+                        class="w-5 h-5 flex items-center justify-center mr-2"
+                      >
+                        <i class="ri-ghost-line"></i>
+                      </div>
+                      <span>RPG</span>
+                    </div>
+                  </label>
+                  <label class="custom-checkbox flex items-center">
+                    <input type="checkbox" />
+                    <span class="checkmark mr-3"></span>
+                    <div class="flex items-center">
+                      <div
+                        class="w-5 h-5 flex items-center justify-center mr-2"
+                      >
+                        <i class="ri-football-line"></i>
+                      </div>
+                      <span>Esportes</span>
+                    </div>
+                  </label>
+                  <label class="custom-checkbox flex items-center">
+                    <input type="checkbox" />
+                    <span class="checkmark mr-3"></span>
+                    <div class="flex items-center">
+                      <div
+                        class="w-5 h-5 flex items-center justify-center mr-2"
+                      >
+                        <i class="ri-car-line"></i>
+                      </div>
+                      <span>Corrida</span>
+                    </div>
+                  </label>
+                  <label class="custom-checkbox flex items-center">
+                    <input type="checkbox" />
+                    <span class="checkmark mr-3"></span>
+                    <div class="flex items-center">
+                      <div
+                        class="w-5 h-5 flex items-center justify-center mr-2"
+                      >
+                        <i class="ri-group-line"></i>
+                      </div>
+                      <span>Multijogador</span>
+                    </div>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Price Range -->
+              <div class="mb-6">
+                <h4 class="text-sm font-semibold text-gray-400 uppercase mb-3">
+                  Faixa de Preço
+                </h4>
+                <div>
+                  <input
+                    type="range"
+                    min="0"
+                    max="500"
+                    value="300"
+                    class="mb-3 w-full"
+                  />
+                  <div class="flex justify-between">
+                    <span class="text-sm text-gray-400">R$ 0</span>
+                    <span class="text-sm text-white">R$ 300</span>
+                    <span class="text-sm text-gray-400">R$ 500</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Release Status -->
+              <div class="mb-6">
+                <h4 class="text-sm font-semibold text-gray-400 uppercase mb-3">
+                  Status
+                </h4>
+                <div class="space-y-3">
+                  <label class="flex items-center justify-between">
+                    <span>Lançados</span>
+                    <label class="custom-switch">
+                      <input type="checkbox" checked />
+                      <span class="slider"></span>
+                    </label>
+                  </label>
+                  <label class="flex items-center justify-between">
+                    <span>Em breve</span>
+                    <label class="custom-switch">
+                      <input type="checkbox" checked />
+                      <span class="slider"></span>
+                    </label>
+                  </label>
+                  <label class="flex items-center justify-between">
+                    <span>Promoções</span>
+                    <label class="custom-switch">
+                      <input type="checkbox" checked />
+                      <span class="slider"></span>
+                    </label>
+                  </label>
+                </div>
+              </div>
+
+              <div class="flex space-x-3">
+                <button
+                  class="bg-neon-purple hover:bg-opacity-90 text-white px-4 py-2 rounded-md font-medium flex-1 transition !rounded-button whitespace-nowrap"
+                >
+                  Aplicar
+                </button>
+                <button
+                  class="bg-transparent border border-gray-600 text-gray-300 hover:border-gray-400 px-4 py-2 rounded-md font-medium transition !rounded-button whitespace-nowrap"
+                >
+                  Limpar
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- News Feed -->
+          <div class="w-full lg:w-3/4">
+            <h2 class="text-3xl font-orbitron font-bold mb-8">
+              Últimas <span class="text-neon-blue">Notícias</span>
+            </h2>
+
+            <div class="space-y-6">
+              <!-- News Item 1 -->
+              <div
+                class="bg-gray-800 rounded-lg overflow-hidden flex flex-col md:flex-row"
+              >
+                <div class="relative md:w-1/3">
+                  <div class="news-category category-launch">Lançamento</div>
+                  <img
+                    src="https://readdy.ai/api/search-image?query=screenshot%20from%20Final%20Fantasy%207%20Rebirth%20game%2C%20high%20quality%2C%20realistic%2C%208K%20resolution%2C%20official%20game%20screenshot&width=600&height=400&seq=news1&orientation=landscape"
+                    alt="Final Fantasy VII Rebirth"
+                    class="w-full h-full object-cover md:h-60"
+                  />
+                </div>
+                <div class="p-6 md:w-2/3">
+                  <div class="flex items-center text-sm text-gray-400 mb-2">
+                    <div class="w-4 h-4 flex items-center justify-center mr-1">
+                      <i class="ri-calendar-line"></i>
+                    </div>
+                    <span>18 de Maio, 2025</span>
+                    <span class="mx-2">•</span>
+                    <div class="w-4 h-4 flex items-center justify-center mr-1">
+                      <i class="ri-playstation-line text-playstation"></i>
+                    </div>
+                    <span>PlayStation</span>
+                  </div>
+                  <h3 class="text-xl font-orbitron font-bold mb-3">
+                    Final Fantasy VII Rebirth recebe atualização com novos
+                    conteúdos
+                  </h3>
+                  <p class="text-gray-300 mb-4">
+                    A Square Enix anunciou hoje uma nova atualização para Final
+                    Fantasy VII Rebirth que adiciona novos conteúdos, incluindo
+                    missões secundárias, armas e um modo de dificuldade
+                    adicional. A atualização estará disponível gratuitamente
+                    para todos os jogadores a partir da próxima semana.
+                  </p>
+                  <button
+                    class="text-neon-blue hover:text-neon-purple transition flex items-center !rounded-button whitespace-nowrap"
+                  >
+                    <span>Ler mais</span>
+                    <div class="w-5 h-5 flex items-center justify-center ml-1">
+                      <i class="ri-arrow-right-line"></i>
+                    </div>
+                  </button>
+                </div>
+              </div>
+
+              <!-- News Item 2 -->
+              <div
+                class="bg-gray-800 rounded-lg overflow-hidden flex flex-col md:flex-row"
+              >
+                <div class="relative md:w-1/3">
+                  <div class="news-category category-event">Evento</div>
+                  <img
+                    src="https://readdy.ai/api/search-image?query=E3%20gaming%20expo%2C%20crowded%20convention%20center%2C%20gaming%20booths%2C%20high%20quality%2C%20realistic%2C%208K%20resolution&width=600&height=400&seq=news2&orientation=landscape"
+                    alt="E3 2025"
+                    class="w-full h-full object-cover md:h-60"
+                  />
+                </div>
+                <div class="p-6 md:w-2/3">
+                  <div class="flex items-center text-sm text-gray-400 mb-2">
+                    <div class="w-4 h-4 flex items-center justify-center mr-1">
+                      <i class="ri-calendar-line"></i>
+                    </div>
+                    <span>15 de Maio, 2025</span>
+                    <span class="mx-2">•</span>
+                    <div class="w-4 h-4 flex items-center justify-center mr-1">
+                      <i class="ri-global-line"></i>
+                    </div>
+                    <span>Eventos</span>
+                  </div>
+                  <h3 class="text-xl font-orbitron font-bold mb-3">
+                    E3 2025 confirma datas e participação de grandes
+                    desenvolvedoras
+                  </h3>
+                  <p class="text-gray-300 mb-4">
+                    A Entertainment Software Association (ESA) anunciou
+                    oficialmente as datas para a E3 2025, que acontecerá de 10 a
+                    13 de junho em Los Angeles. Microsoft, Nintendo, Ubisoft, EA
+                    e outras grandes desenvolvedoras já confirmaram presença no
+                    evento, que promete grandes anúncios.
+                  </p>
+                  <button
+                    class="text-neon-blue hover:text-neon-purple transition flex items-center !rounded-button whitespace-nowrap"
+                  >
+                    <span>Ler mais</span>
+                    <div class="w-5 h-5 flex items-center justify-center ml-1">
+                      <i class="ri-arrow-right-line"></i>
+                    </div>
+                  </button>
+                </div>
+              </div>
+
+              <!-- News Item 3 -->
+              <div
+                class="bg-gray-800 rounded-lg overflow-hidden flex flex-col md:flex-row"
+              >
+                <div class="relative md:w-1/3">
+                  <div class="news-category category-update">Atualização</div>
+                  <img
+                    src="https://readdy.ai/api/search-image?query=screenshot%20from%20Fortnite%20game%2C%20new%20season%20update%2C%20colorful%20battle%20royale%20scene%2C%20high%20quality%2C%20realistic%2C%208K%20resolution%2C%20official%20game%20screenshot&width=600&height=400&seq=news3&orientation=landscape"
+                    alt="Fortnite"
+                    class="w-full h-full object-cover md:h-60"
+                  />
+                </div>
+                <div class="p-6 md:w-2/3">
+                  <div class="flex items-center text-sm text-gray-400 mb-2">
+                    <div class="w-4 h-4 flex items-center justify-center mr-1">
+                      <i class="ri-calendar-line"></i>
+                    </div>
+                    <span>12 de Maio, 2025</span>
+                    <span class="mx-2">•</span>
+                    <div class="w-4 h-4 flex items-center justify-center mr-1">
+                      <i class="ri-gamepad-line"></i>
+                    </div>
+                    <span>Multiplataforma</span>
+                  </div>
+                  <h3 class="text-xl font-orbitron font-bold mb-3">
+                    Fortnite anuncia nova temporada com temática de filmes de
+                    ficção científica
+                  </h3>
+                  <p class="text-gray-300 mb-4">
+                    A Epic Games revelou detalhes sobre a próxima temporada de
+                    Fortnite, que terá como tema grandes filmes de ficção
+                    científica. A atualização trará novos personagens, armas
+                    temáticas e locais inspirados em clássicos do cinema, além
+                    de colaborações com franquias populares.
+                  </p>
+                  <button
+                    class="text-neon-blue hover:text-neon-purple transition flex items-center !rounded-button whitespace-nowrap"
+                  >
+                    <span>Ler mais</span>
+                    <div class="w-5 h-5 flex items-center justify-center ml-1">
+                      <i class="ri-arrow-right-line"></i>
+                    </div>
+                  </button>
+                </div>
+              </div>
+
+              <!-- News Item 4 -->
+              <div
+                class="bg-gray-800 rounded-lg overflow-hidden flex flex-col md:flex-row"
+              >
+                <div class="relative md:w-1/3">
+                  <div class="news-category category-launch">Lançamento</div>
+                  <img
+                    src="https://readdy.ai/api/search-image?query=screenshot%20from%20Elder%20Scrolls%206%20game%2C%20fantasy%20landscape%2C%20mountains%2C%20high%20quality%2C%20realistic%2C%208K%20resolution%2C%20official%20game%20screenshot&width=600&height=400&seq=news4&orientation=landscape"
+                    alt="The Elder Scrolls VI"
+                    class="w-full h-full object-cover md:h-60"
+                  />
+                </div>
+                <div class="p-6 md:w-2/3">
+                  <div class="flex items-center text-sm text-gray-400 mb-2">
+                    <div class="w-4 h-4 flex items-center justify-center mr-1">
+                      <i class="ri-calendar-line"></i>
+                    </div>
+                    <span>10 de Maio, 2025</span>
+                    <span class="mx-2">•</span>
+                    <div class="w-4 h-4 flex items-center justify-center mr-1">
+                      <i class="ri-xbox-line text-xbox"></i>
+                    </div>
+                    <span>Xbox / PC</span>
+                  </div>
+                  <h3 class="text-xl font-orbitron font-bold mb-3">
+                    Bethesda finalmente revela trailer de The Elder Scrolls VI
+                  </h3>
+                  <p class="text-gray-300 mb-4">
+                    Após anos de espera, a Bethesda finalmente revelou o
+                    primeiro trailer oficial de The Elder Scrolls VI durante o
+                    Xbox Showcase. O vídeo mostra cenários impressionantes e dá
+                    pistas sobre a localização do jogo, que parece se passar em
+                    High Rock e Hammerfell. A data de lançamento ainda não foi
+                    anunciada.
+                  </p>
+                  <button
+                    class="text-neon-blue hover:text-neon-purple transition flex items-center !rounded-button whitespace-nowrap"
+                  >
+                    <span>Ler mais</span>
+                    <div class="w-5 h-5 flex items-center justify-center ml-1">
+                      <i class="ri-arrow-right-line"></i>
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-8 flex justify-center">
+              <div class="inline-flex rounded-md">
+                <button
+                  class="px-4 py-2 rounded-l-md bg-gray-800 text-gray-400 hover:bg-gray-700 transition !rounded-button whitespace-nowrap"
+                >
+                  <div class="w-5 h-5 flex items-center justify-center">
+                    <i class="ri-arrow-left-s-line"></i>
+                  </div>
+                </button>
+                <button
+                  class="px-4 py-2 bg-neon-purple text-white !rounded-button whitespace-nowrap"
+                >
+                  1
+                </button>
+                <button
+                  class="px-4 py-2 bg-gray-800 text-gray-300 hover:bg-gray-700 transition !rounded-button whitespace-nowrap"
+                >
+                  2
+                </button>
+                <button
+                  class="px-4 py-2 bg-gray-800 text-gray-300 hover:bg-gray-700 transition !rounded-button whitespace-nowrap"
+                >
+                  3
+                </button>
+                <button
+                  class="px-4 py-2 bg-gray-800 text-gray-300 hover:bg-gray-700 transition !rounded-button whitespace-nowrap"
+                >
+                  4
+                </button>
+                <button
+                  class="px-4 py-2 rounded-r-md bg-gray-800 text-gray-300 hover:bg-gray-700 transition !rounded-button whitespace-nowrap"
+                >
+                  <div class="w-5 h-5 flex items-center justify-center">
+                    <i class="ri-arrow-right-s-line"></i>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-16 bg-dark">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-orbitron font-bold mb-12 text-center">
+          Estatísticas de <span class="text-neon-pink">Jogos</span>
+        </h2>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <!-- Chart 1: Popularity by Platform -->
+          <div class="bg-gray-800 rounded-lg p-6">
+            <h3 class="text-xl font-orbitron font-bold mb-4">
+              Popularidade por Plataforma
+            </h3>
+            <div id="platformChart" class="w-full h-80"></div>
+          </div>
+
+          <!-- Chart 2: Game Genres -->
+          <div class="bg-gray-800 rounded-lg p-6">
+            <h3 class="text-xl font-orbitron font-bold mb-4">
+              Gêneros Mais Populares
+            </h3>
+            <div id="genreChart" class="w-full h-80"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-16 bg-gray-900 relative overflow-hidden">
+      <div
+        class="absolute top-0 left-0 w-full h-full opacity-10"
+        style="background-image: url('https://readdy.ai/api/search-image?query=abstract%20gaming%20background%20with%20controllers%2C%20keyboards%2C%20and%20gaming%20symbols%2C%20neon%20colors%2C%20dark%20background%2C%20high%20quality&width=1920&height=1080&seq=newsletter&orientation=landscape'); background-size: cover; background-position: center;"
+      ></div>
+
+      <div class="container mx-auto px-4 relative z-10">
+        <div class="max-w-3xl mx-auto text-center">
+          <h2 class="text-3xl font-orbitron font-bold mb-4">
+            Fique por dentro das novidades
+          </h2>
+          <p class="text-gray-300 mb-8">
+            Assine nossa newsletter e receba as últimas notícias, lançamentos e
+            promoções do mundo dos games diretamente no seu email.
+          </p>
+
+          <div class="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto">
+            <input
+              type="email"
+              placeholder="Seu email"
+              class="search-input flex-1 py-3 px-4 rounded-full text-white focus:outline-none border-none"
+            />
+            <button
+              class="bg-neon-purple hover:bg-opacity-90 text-white px-6 py-3 rounded-full font-semibold transition !rounded-button whitespace-nowrap"
+            >
+              Inscrever-se
+            </button>
+          </div>
+
+          <p class="text-sm text-gray-400 mt-4">
+            Ao se inscrever, você concorda com nossa política de privacidade.
+            Você pode cancelar a assinatura a qualquer momento.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark border-t border-gray-800 pt-12 pb-6">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+          <!-- Column 1 -->
+          <div>
+            <div class="flex items-center mb-6">
+              <h1 class="text-2xl font-['Pacifico'] text-white mr-2"></h1>
+              <span
+                class="text-xl font-orbitron font-bold bg-gradient-to-r from-neon-purple to-neon-blue text-transparent bg-clip-text"
+                >GameZone</span
+              >
+            </div>
+            <p class="text-gray-400 mb-6">
+              Seu portal definitivo para notícias, lançamentos e tendências do
+              mundo dos jogos em todas as plataformas.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-neon-purple transition"
+              >
+                <i class="ri-twitter-x-line text-white"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-neon-purple transition"
+              >
+                <i class="ri-instagram-line text-white"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-neon-purple transition"
+              >
+                <i class="ri-youtube-line text-white"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-neon-purple transition"
+              >
+                <i class="ri-discord-line text-white"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Column 2 -->
+          <div>
+            <h3 class="text-lg font-orbitron font-bold mb-6">Links Rápidos</h3>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-neon-purple transition flex items-center"
+                >
+                  <div class="w-4 h-4 flex items-center justify-center mr-2">
+                    <i class="ri-arrow-right-s-line"></i>
+                  </div>
+                  Página Inicial
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-neon-purple transition flex items-center"
+                >
+                  <div class="w-4 h-4 flex items-center justify-center mr-2">
+                    <i class="ri-arrow-right-s-line"></i>
+                  </div>
+                  Notícias
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-neon-purple transition flex items-center"
+                >
+                  <div class="w-4 h-4 flex items-center justify-center mr-2">
+                    <i class="ri-arrow-right-s-line"></i>
+                  </div>
+                  Lançamentos
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-neon-purple transition flex items-center"
+                >
+                  <div class="w-4 h-4 flex items-center justify-center mr-2">
+                    <i class="ri-arrow-right-s-line"></i>
+                  </div>
+                  Reviews
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-neon-purple transition flex items-center"
+                >
+                  <div class="w-4 h-4 flex items-center justify-center mr-2">
+                    <i class="ri-arrow-right-s-line"></i>
+                  </div>
+                  Guias e Dicas
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Column 3 -->
+          <div>
+            <h3 class="text-lg font-orbitron font-bold mb-6">Plataformas</h3>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-neon-purple transition flex items-center"
+                >
+                  <div
+                    class="w-5 h-5 flex items-center justify-center mr-2 text-xbox"
+                  >
+                    <i class="ri-xbox-line"></i>
+                  </div>
+                  Xbox Series X|S / One
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-neon-purple transition flex items-center"
+                >
+                  <div
+                    class="w-5 h-5 flex items-center justify-center mr-2 text-playstation"
+                  >
+                    <i class="ri-playstation-line"></i>
+                  </div>
+                  PlayStation 5 / PS4
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-neon-purple transition flex items-center"
+                >
+                  <div
+                    class="w-5 h-5 flex items-center justify-center mr-2 text-nintendo"
+                  >
+                    <i class="ri-gamepad-line"></i>
+                  </div>
+                  Nintendo Switch
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-neon-purple transition flex items-center"
+                >
+                  <div
+                    class="w-5 h-5 flex items-center justify-center mr-2 text-pc"
+                  >
+                    <i class="ri-computer-line"></i>
+                  </div>
+                  PC Gaming
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-neon-purple transition flex items-center"
+                >
+                  <div class="w-5 h-5 flex items-center justify-center mr-2">
+                    <i class="ri-smartphone-line"></i>
+                  </div>
+                  Mobile
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Column 4 -->
+          <div>
+            <h3 class="text-lg font-orbitron font-bold mb-6">Contato</h3>
+            <ul class="space-y-3">
+              <li class="flex items-start">
+                <div
+                  class="w-5 h-5 flex items-center justify-center mr-2 mt-1 text-neon-purple"
+                >
+                  <i class="ri-mail-line"></i>
+                </div>
+                <span class="text-gray-400">contato@gamezone.com.br</span>
+              </li>
+              <li class="flex items-start">
+                <div
+                  class="w-5 h-5 flex items-center justify-center mr-2 mt-1 text-neon-purple"
+                >
+                  <i class="ri-customer-service-2-line"></i>
+                </div>
+                <span class="text-gray-400">Suporte: (11) 4002-8922</span>
+              </li>
+              <li class="flex items-start">
+                <div
+                  class="w-5 h-5 flex items-center justify-center mr-2 mt-1 text-neon-purple"
+                >
+                  <i class="ri-map-pin-line"></i>
+                </div>
+                <span class="text-gray-400"
+                  >Av. Paulista, 1000 - São Paulo, SP</span
+                >
+              </li>
+            </ul>
+
+            <div class="mt-6">
+              <h4 class="text-sm font-semibold text-gray-300 mb-3">
+                Formas de Pagamento
+              </h4>
+              <div class="flex space-x-3">
+                <div
+                  class="w-10 h-6 flex items-center justify-center bg-gray-700 rounded"
+                >
+                  <i class="ri-visa-fill text-white"></i>
+                </div>
+                <div
+                  class="w-10 h-6 flex items-center justify-center bg-gray-700 rounded"
+                >
+                  <i class="ri-mastercard-fill text-white"></i>
+                </div>
+                <div
+                  class="w-10 h-6 flex items-center justify-center bg-gray-700 rounded"
+                >
+                  <i class="ri-paypal-fill text-white"></i>
+                </div>
+                <div
+                  class="w-10 h-6 flex items-center justify-center bg-gray-700 rounded"
+                >
+                  <i class="ri-bank-card-fill text-white"></i>
+                </div>
+                <div
+                  class="w-10 h-6 flex items-center justify-center bg-gray-700 rounded"
+                >
+                  <i class="ri-alipay-fill text-white"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="border-t border-gray-800 pt-6 mt-6">
+          <div class="flex flex-col md:flex-row justify-between items-center">
+            <p class="text-sm text-gray-500 mb-4 md:mb-0">
+              2025 GameZone. Todos os direitos reservados.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="text-sm text-gray-500 hover:text-neon-purple transition"
+                >Termos de Uso</a
+              >
+              <a
+                href="#"
+                class="text-sm text-gray-500 hover:text-neon-purple transition"
+                >Política de Privacidade</a
+              >
+              <a
+                href="#"
+                class="text-sm text-gray-500 hover:text-neon-purple transition"
+                >Cookies</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
