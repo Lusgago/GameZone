@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     series: [
       {
-        name: "Jogos por Plataforma",
+        name: "Games by Platform",
         type: "pie",
         radius: ["40%", "70%"],
         avoidLabelOverlap: false,
@@ -128,13 +128,13 @@ document.addEventListener("DOMContentLoaded", function () {
     xAxis: {
       type: "category",
       data: [
-        "Ação",
+        "Action",
         "RPG",
         "FPS",
-        "Aventura",
-        "Esportes",
-        "Corrida",
-        "Estratégia",
+        "Adventure",
+        "Sports",
+        "Racing",
+        "Strategy",
       ],
       axisLine: {
         lineStyle: {
@@ -163,7 +163,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     series: [
       {
-        name: "Popularidade",
+        name: "Popularity",
         type: "bar",
         data: [85, 78, 72, 65, 60, 55, 48],
         itemStyle: {
